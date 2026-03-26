@@ -35,7 +35,7 @@ To run this project locally, follow these steps:
 
 📂 Project Structure
    
-     ├── node_modules/       # Installed dependencies (git-ignored)
+    ├── node_modules/       # Installed dependencies (git-ignored)
 ├── src/                # Project source code
 │   ├── assets/         # Images, icons, and local media
 │   ├── App.jsx         # Main React component (UI & Logic)
