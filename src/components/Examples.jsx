@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { EXAMPLES } from '../data.js';
 import TabButton from './TabButton.jsx';
 import Section from './Section.jsx';   
+import Tabs from './Tabs.jsx';
 
 export default function Examples(){
  const [selectedTopic, setSelectedTopic] = useState();
@@ -13,28 +14,29 @@ export default function Examples(){
 
     return(
          <Section title="Examples" className='mt-16'>
-            
+
+            <Tabs> </Tabs>
              
             <menu className="flex flex-wrap gap-3 list-none p-0 m-0 mb-10">
               <TabButton 
                 isSelected={selectedTopic === 'components'} 
                 label="Components" 
-                onSelect={() => handleSelect("components")} 
+                onClick={() => handleSelect("components")} 
               />
               <TabButton 
                 isSelected={selectedTopic === 'jsx'} 
                 label="JSX" 
-                onSelect={() => handleSelect("jsx")} 
+                onClick={() => handleSelect("jsx")} 
               />
               <TabButton 
                 isSelected={selectedTopic === 'props'} 
                 label="Props" 
-                onSelect={() => handleSelect("props")} 
+                onClick={() => handleSelect("props")} 
               />
               <TabButton 
                 isSelected={selectedTopic === 'state'} 
                 label="State" 
-                onSelect={() => handleSelect("state")} 
+                onClick={() => handleSelect("state")} 
               />
             </menu>
 
